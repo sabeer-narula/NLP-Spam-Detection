@@ -19,6 +19,7 @@ Data is obtained from:
 - [Enron email dataset](https://www.kaggle.com/datasets/wcukierski/enron-email-dataset)
 - [Spam email dataset](https://www.kaggle.com/code/balaka18/email-spam-classification)
 - [British Columbia Conversation Corpus](https://nlp.cs.ubc.ca/bc3.html)
+
 and preprocessed to remove irrelevant characters and stopwords. The preprocessing involves tokenization, lemmatization, and the creation of a Bag of Words model.
 
 ## Model Training Procedure
@@ -34,10 +35,3 @@ The core of our spam detection system lies in the training of two machine learni
         - `y_train`: Labels indicating whether a message is spam (`1`) or not spam (`0`).
      b. Train the model using the `fit` method with `X_train` and `y_train`.
      c. Through this process, the model learns to associate specific features with the labels of spam or not spam.
-
-### Pseudocode for Training Models:
-```plaintext
-FOR EACH model IN [Naive Bayes, Logistic Regression]
-    model.fit(X_train, y_train)
-    PRINT "Model is trained and ready to classify messages"
-END FOR
